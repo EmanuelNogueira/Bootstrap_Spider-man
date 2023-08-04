@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #121212;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0px 100px;
+}
+
+.logo_base {
+  max-width: 100px;
+}
+
+#carouselExampleCaptions {
+  margin-top: 100px;
+  animation: 2s carousel-base ease-in-out infinite;
+}
+
+@keyframes carousel-base {
+  0% {
+    filter: drop-shadow(0px 0px 0px #e2000090);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 40px #e2000090);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px #e2000090);
+  }
+}
+
+.films-list img {
+  max-width: 400px;
+  left: 35%;
+  position: relative;
+  cursor: pointer;
+}
+
+.buy-tickets {
+  width: 100%;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.buy-tickets button {
+  padding: 5px 30px;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #e20000;
+  border: none;
+  filter: drop-shadow(0px 0px 5px #00000070);
+}
+
+.buy-tickets-one p {
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.grid {
+  margin-top: 100px;
+  display: flex;
+}
+
+.g-col-2 img {
+  max-width: 200px;
+}
+
+.list-games {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.col-sm-4 {
+  transition: 0.5s;
+}
+
+.col-sm-4:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+footer {
+  background: #242424;
+  margin: 50px 0px -15px 0px;
+  padding: 0px -50px;
+  color: #8b8b8b;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.footer ul li {
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: #b8b8b8;
+}
+
+.footer-information {
+  display: flex;
+  list-style: none;
+  padding: 25px 0px 40px 150px;
+}
+
+.footer-information li {
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dd0000; /* Cor do polegar */
+  border-radius: 5px; /* Borda arredondada do polegar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f1f; /* Cor da trilha */
+}
+@media (max-width: 991px) {
+  .films-list img {
+    left: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .films-list img {
+    left: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .films-list img {
+    left: 20%;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+  }
+  .footer-information {
+    display: flex;
+    list-style: none;
+    padding: 25px 0px 40px 50px;
+  }
+
+  .footer-information li {
+    margin: 0 5px;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer ul li {
+    font-size: 0.7rem;
+  }
+  .footer-information {
+    padding: 25px 0px 40px 40px;
+  }
+
+  .footer-information li {
+    margin: 0 5px;
+    font-size: 0.5rem;
+  }
+}

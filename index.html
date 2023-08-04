@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Css nativo -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <nav class="navbar bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img
+                class="logo_base"
+                src="./Arquivos/Spider-Man-Logo.png"
+                alt="Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#films-section"
+                    >Filmes
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news-section">Notícias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#games">Games</a>
+                </li>
+               
+              </ul>
+              <span class="navbar-text">
+                Com grandes poderes vêm grandes responsabilidades.
+              </span>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div class="buy-tickets-one">
+      <p>FILMES DISPONÍVEIS NOS CINEMAS</p>
+    </div>
+    <div id="films-section">
+      <div id="carouselExample" class="carousel slide films-section">
+        <div class="carousel-inner">
+          <div class="carousel-item active films-list">
+            <img
+              src="./Arquivos/Imagens Films/01.png"
+              class="d-block w-100"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item films-list">
+            <img
+              src="./Arquivos/Imagens Films/02.png"
+              class="d-block w-100"
+              alt=""
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="buy-tickets">
+      <button>COMPRE AGORA SEU INGRESSO AQUI</button>
+    </div>
+    <!-- Carousel 2 -->
+    <section id="news-section">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./Arquivos/Imagens Caroussel/001.jpg"
+              class="d-block w-100"
+              alt="Homem Aranha 01"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NEW SPIDER MAN GAME</h5>
+              <p>An enjoyable and high quality game for superhero lovers.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./Arquivos/Imagens Caroussel/002.jpg"
+              class="d-block w-100"
+              alt="Homem Aranha 02"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NEW SPIDER MAN GAME</h5>
+              <p>An enjoyable and high quality game for superhero lovers.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./Arquivos/Imagens Caroussel/003.jpg"
+              class="d-block w-100"
+              alt="Homem Aranha 03"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NEW SPIDER MAN GAME</h5>
+              <p>An enjoyable and high quality game for superhero lovers.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- List Games -->
+
+    <section class="list-games" id="games">
+      <div class="row">
+        <div class="col-sm-4 ">
+          <div class="card" style="width: 18rem">
+            <img src="./Arquivos/Imagens Games/001.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">SPIDER-MAN 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-danger">
+                Watch the game</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Arquivos/Imagens Games/002.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">SPIDER-MAN 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-danger">
+                Watch the game</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Arquivos/Imagens Games/003.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">SPIDER-MAN 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-danger">
+                Watch the game</a>
+            </div>
+          </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li>Loja</li>
+          <li>Acessórios</li>
+          <li>App</li>
+          <li>Google Play</li>
+        </ul>
+        <ul>
+          <li>Duvidas</li>
+          <li>Termos</li>
+          <li>Politicade Privacidade </li>
+          <li>Aviso legais</li>
+        </ul>
+        <ul>
+          <li>Filmes</li>
+          <li>Series</li>
+          <li>Desenhos</li>
+          <li>Revistas</li>
+        </ul>
+      </div>
+      <ul class="footer-information">
+        <li>Duvidas</li>
+        <li>Termos</li>
+        <li>Politicade Privacidade </li>
+        <li>Aviso legais</li>
+      </ul>
+    </footer>
+  </body>
+</html>
